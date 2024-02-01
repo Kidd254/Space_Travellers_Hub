@@ -9,6 +9,7 @@ const Header = () => (
         <AppLogo />
         <ul id="navigation">
           <MenuLink url="/rockets" pageName="Rockets" />
+          <MenuLink url="/missions" pageName="Missions" />
         </ul>
       </nav>
     </div>
