@@ -1,11 +1,11 @@
-
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Rockets from './views/Rockets';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Routes>
+      <Route path="/" element={<Rockets />} />
+    </Routes>
   );
 }
 
