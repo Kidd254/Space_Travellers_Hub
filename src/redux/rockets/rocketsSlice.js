@@ -1,11 +1,13 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
 import axios from 'axios';
 
+const baseUrl = process.env.REACT_APP_BASE_URL;
+
 export const getRockets = createAsyncThunk(
     'rockets/getRockets',
     async (thunkApi) => {
         try {
-            const response = await axios.get('https://api.spacexdata.com/v3/rockets');
+            const response = await axios.get(`{baseUrl}/rockets`);
             return response.data;
         } catch (error) {
             return thunkApi.rejectWithValue(error.message);
