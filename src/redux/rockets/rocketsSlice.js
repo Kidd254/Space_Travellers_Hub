@@ -7,7 +7,7 @@ export const getRockets = createAsyncThunk(
     'rockets/getRockets',
     async (thunkApi) => {
         try {
-            const response = await axios.get(`{baseUrl}/rockets`);
+            const response = await axios.get(`${baseUrl}/rockets`);
             return response.data;
         } catch (error) {
             return thunkApi.rejectWithValue(error.message);
