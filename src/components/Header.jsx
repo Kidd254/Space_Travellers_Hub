@@ -10,6 +10,7 @@ const Header = () => (
         <ul id="navigation">
           <MenuLink url="/rockets" pageName="Rockets" />
           <MenuLink url="/missions" pageName="Missions" />
+          <MenuLink url="/my-profile" pageName="My Profile" />
         </ul>
       </nav>
     </div>
