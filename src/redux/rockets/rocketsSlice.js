@@ -53,8 +53,8 @@ const rocketsSlice = createSlice({
         if (state.rockets.length === 0) {
           state.isLoading = false;
           state.rockets = action.payload.map((rocket) => ({
-            rocket_id: rocket.rocket_id,
-            rocket_name: rocket.rocket_name,
+            rocket_id: rocket.id,
+            rocket_name: rocket.name,
             description: rocket.description,
             image: rocket.flickr_images[0]
           }));
