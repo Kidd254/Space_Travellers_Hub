@@ -15,10 +15,10 @@ const RocketItem = ({ rocket }) => {
   return (
     <div className="rocket-item">
       <div className="rocket-image">
-        <img src={rocket.image} alt={rocket.name} />
+        <img src={rocket.image} alt={rocket.rocket_name} />
       </div>
       <div className="rocket-details">
-        <h2 className="title">{rocket.name}</h2>
+        <h2 className="title">{rocket.rocket_name}</h2>
         <p className="description">
           {rocket.reserved && (
             <span className="badge badge-blue">Reserved</span>
