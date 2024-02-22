@@ -11,7 +11,7 @@ const ReservedRockets = () => {
         {rockets
           .filter((rocket) => rocket.reserved === true)
           .map((rocket) => (
-            <ReservationItem key={rocket.rocket_id} serviceName={rocket.rocket_name} />
+            <ReservationItem key={rocket.id} serviceName={rocket.rocket_name} />
           ))}
       </ul>
     </div>
