@@ -5,11 +5,11 @@ import { LeaveRocket, addReservedRocket } from '../redux/rockets/rocketsSlice';
 const RocketItem = ({ rocket }) => {
   const dispatch = useDispatch();
   const handleClickAddReserve = () => {
-    dispatch(addReservedRocket(rocket.id));
+    dispatch(addReservedRocket(rocket.rocket_id));
   };
 
   const handleClickCancelReserve = () => {
-    dispatch(LeaveRocket(rocket.id));
+    dispatch(LeaveRocket(rocket.rocket_id));
   };
 
   return (
